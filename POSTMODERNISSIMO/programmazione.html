@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Postmodernissmo</title>
+  <link rel = "icon" href = "vettori/logo.svg"  type = "image/x-icon">
+  <link rel="stylesheet"  href="CSS/pagina2.css">
+  <script src="JavaScriptComplessivo.js"></script>
+</head>
+
+
+
+<body style="background-color: #FBF598;"onload="oraDelGiorno()"> <!-- COLORE SFONDO e ora puntuale-->
+
+<!-- inizia la griglia-->
+<div class="tutto">
+<!-- riga 1-->
+<div class="row" style="">
+<!-- intestazione-->
+  <div class="col-1 centrato" style="z-index: 2;"> <!-- il logotipo -->
+    <a href="index.html"><img src="vettori/logotipo.svg" style="width:103px; height:96px;"></a>
+  </div>
+  <div class="col-2 centrato" id="tab" style="position: relative; z-index: 2;"> <!-- il logo -->
+    <a href="index.html"><img src="vettori/logo.svg" class="logoscaled" style="width:142px;height:75.5px;"></a>
+  </div>
+  <div class="col-1 centrato" style="position: relative;z-index: 5;" id="tab">
+    <img src="vettori/menublack.svg" style="position: absolute; right: 15px;" onclick="menu();footerTabProgrammazione()">
+  </div>
+<!-- titolo sezione-->
+  <div class="col-3" style="position: relative;"id="desk"> <!-- il logo -->
+  <h2 style="position: absolute; top: 70px; left: 0;">PROGRAMMAZIONE</h2>
+  </div>
+<div class="col-1"id="desk">
+
+<!-- I giorni della settimana DESKTOP-->
+</div>
+  <div class="col-3 centrato" id="desk">
+  <p class="settimana"><a href="programmazione.html" id="lune">LUN</a></p></a>
+  <p class="settimana"><a href="programmazione.html" id="week">MAR</a></p>
+  <p class="settimana"><a href="programmazione.html" id="week">MER</a></p>
+  <p class="settimana"><a href="programmazione.html" id="week">GIO</a></p>
+  <p class="settimana"><a href="programmazione.html" id="week">VEN</a></p>
+  <p class="settimana"><a href="programmazione.html" id="week">SAB</a></p>
+  <p class="settimana"><a href="programmazione.html" id="week">DOM</a></p>
+  </div>
+<!-- fine dei giorni della settimana DESKTOP-->
+<!-- parte intestazione-->
+  <div class="col-2" style="position: relative;" id="desk">
+  <a href="index.html"><img src="vettori/logo.svg" id="desk" style="width:142px;height:75.5px; position: absolute; top: 22px;"></a>
+  </div>
+
+<!--men&ugrave; tablet-->
+<div id="menuHide" class="tab" style="display: none;position: relative;z-index: 1;">
+<div class="col-4 dueRighe" id="tab" style="margin-top:15px;">
+  <ul>
+    <li><a id="normale" href="programmazione.html"class="top">PROGRAMMAZIONE</a></li>
+    <li><a id="normale" href="https://www.liveticket.it/postmodernissimo" target="_blank"class="top">BIGLIETTI</a></li>
+    <li><a id="normale" href="iniziative.html"class="top">INIZIATIVE</a></li>
+    <li><a id="normale" href="canvas.html"class="top">SHOP</a></li>
+    <li><a id="normale" href="contatti.html"class="top">CONTATTI</a></li>
+    <li><a id="normale" href="https://www.1895.cloud/cinema/postmodernissimo/ "target="_blank"class="top">1895.CLOUD</a></li>
+    <li><a id="normale" href="http://www.cinemametropolis.it" target="_blank"class="top">METROPOLIS CINEMA</a></li>
+  </ul>
+</div>
+<div class="col-3 dueRighe" id="tab">
+  <p>POSTMOD &Egrave; UN LUOGO DEDICATO AL CINEMA E ALLE ARTI VISIVE. NATO CON L’INTENTO DI TRASFORMARE LA VISIONE DEL FILM IN UN’ESPERIENZA MOLTO PI&Ugrave; PROFONDA DEL SEMPLICE ACQUISTO DI UN BIGLIETTO.<br>
+  <br>POSTMOD È UN CINEMA CHE TRAE FORZA E ISPIRAZIONE DALLA COMUNIT&Agrave; CHE LO VIVE.</p>
+</div>
+</div>
+<!--fine men&ugrave; tablet-->
+<!-- intestazione tablet-->
+<div class="col-3" style="position: relative;"id="tab"> <!-- il logo -->
+<h2 style="position: absolute; top: 70px; left: 0;">PROGRAMMAZIONE</h2>
+</div>
+<!-- giorni della settimana tablet-->
+<div class="col-1"id="tab">
+  <div class="col-3 centrato">
+  <p class="settimana"><a href="programmazione.html" id="lune">LUN</a>
+  <a href="programmazione.html" id="week">MAR</a>
+  <a href="programmazione.html" id="week">MER</a>
+  <a href="programmazione.html" id="week">GIO</a>
+  <a href="programmazione.html" id="week">VEN</a>
+  <a href="programmazione.html" id="week">SAB</a>
+  <a href="programmazione.html" id="week">DOM</a></p>
+  </div>
+</div>
+<!-- fine giorni della settimana tablet-->
+
+<!--timeline desktop-->
+  <div class="col-6 centrato" style="position:relative;"id="desk">
+    <img src="vettori/programmazioneLinee.svg"style="position:absolute;top:63px;">
+    <h3 class="orari" style="right:637px;">11.00</h3>
+    <h3 class="orari" style="right:503px;">18.00</h3>
+    <h3 class="orarip" style="right:436px;">18.15</h3>
+    <h3 class="orari" style="right:370px;">19.00</h3>
+    <h3 class="orari" style="right:236px;">20.30</h3>
+    <h3 class="orarip" style="right:170px;display:none;">21.00</h3>
+    <h3 class="orari" style="right:102px;">21.30</h3>
+    <h3 id="orariobasso">ciao</h3><!--orario corrente-->
+  </div>
+<!--timeline tablet-->
+  <div class="col-4"style="position:relative;" id="tab">
+    <img src="vettori/programmazioneLineeTab.svg"style="position:absolute;top:63px;right:66px;">
+    <img src="vettori/programmazioneAggiuntiva.svg" style="transform:rotate(90deg);position:absolute;left:297px;top:23px;">
+    <div style="position:absolute;top:50px; left:0px;">
+    <h3 class="orari">11.00</h3>
+    <h3 class="orari">18.00</h3>
+    <h3 class="orarip"style="top:105px;">18.15</h3>
+    <h3 class="orari">19.00</h3>
+    <h3 class="orari">20.30</h3>
+    <h3 class="orarip"style="top:260px;display:none;">21.00</h3>
+    <h3 id="orariobassoTab">21.00</h3> <!--orario corrente-->
+    <h3 class="orari">21.30</h3>
+  </div>
+  </div>
+
+<!--fine timeline-->
+
+
+<!-- men&ugrave; desktop -->
+</div>
+<div class="row"  style="z-index: -3;">
+<div class="col-2 dueRighe" style="padding-left:0px;"id="desk">
+  <ul>
+    <li><a id="prog" href="programmazione.html"class="top">PROGRAMMAZIONE</a></li>
+    <li><a id="normale" href="https://www.liveticket.it/postmodernissimo" target="_blank"class="top">BIGLIETTI</a></li>
+    <li><a id="normale" href="iniziative.html"class="top">INIZIATIVE</a></li>
+    <li><a id="normale" href="canvas.html"class="top">SHOP</a></li>
+    <li><a id="normale" href="contatti.html"class="top">CONTATTI</a></li>
+    <li><a id="normale" href="https://www.1895.cloud/cinema/postmodernissimo/ "target="_blank"class="top">1895.CLOUD</a></li>
+    <li><a id="normale" href="http://www.cinemametropolis.it" target="_blank"class="top">METROPOLIS CINEMA</a></li>
+  </ul>
+</div>
+<!-- fine men&ugrave; desktop -->
+
+<!--i film in nero desktop-->
+<div class="col-2 centrato" id="desk">
+  <a href="film.html"><div class="centrato filmTimeline"style="transform:translate(-62px,-58px)">
+  <p class="filmProgrammazione">stitches - un <br>legame privato</p>
+  <p class="VO">(v.o.)</p>
+</div></a>
+
+  <a href="film.html"><div class="centrato filmTimeline"style="transform:translate(336px,-58px);">
+  <p class="filmProgrammazione">stitches - un <br>legame privato</p>
+  <p class="VO">(v.o.)</p>
+</div></a>
+</div>
+
+<div class="col-2 centrato"id="desk"> <!-- colonna 5 e 6 -->
+  <a href="film.html"><div class="centrato filmTimeline"style="transform:translate(70px,-100px);height:25px;">
+  <p class="filmProgrammazione">guerra e pace</p>
+</div></a>
+</div>
+
+
+<div class="col-2 centrato"id="desk">
+  </div>
+
+<!-- film in nero tablet -->
+<div class="col-2 centrato"id="tab">
+  <a href="film.html"><div class="centrato filmTimeline"style="transform:translate(130px,-108px);">
+  <p class="filmProgrammazione">stitches - un <br>legame privato</p>
+  <p class="VO">(v.o.)</p>
+</div></a>
+<a href="film.html"><div class="centrato filmTimeline"style="transform:translate(130px,205px);height:40px;">
+<p class="filmProgrammazione">stitches - un <br>legame privato</p>
+</div></a>
+<a href="film.html"><div class="centrato filmTimeline"style="transform:translate(300px,-108px)">
+<p class="filmProgrammazione">days of<br>being wild</p>
+<p class="VO">(v.o.)</p>
+</div></a>
+<a href="film.html"><div class="centrato filmTimeline"style="transform:translate(300px,-15px);height:25px">
+<p class="filmProgrammazione">un altro giro</p>
+</div></a>
+<a href="film.html"><div class="centrato filmTimeline"style="transform:translate(180px,15px);height:40px;width:100px;">
+<p class="filmProgrammazione">sulla<br>infinitezza</p>
+</div></a>
+<a href="film.html"><div class="centrato filmTimeline"style="transform:translate(300px,210px);height:25px;">
+<p class="filmProgrammazione">guerra e pace</p>
+</div></a>
+<img src="vettori/programmazioneOrario.svg"id="lineaTempoTab">
+
+
+</div>
+<!-- fine film in nero tablet -->
+
+
+
+<div class="col-2 centrato"id="desk">
+  <a href="film.html"><a href="film.html"><div class="centrato filmTimeline"style="transform:translate(134px,-100px);height:25px; position:relative; z-index: 1; ">
+  <p class="filmProgrammazione">un altro giro</p>
+</div></a>
+  <a href="film.html"><div class="centrato filmTimeline"style="transform:translate(-125px,-10px)">
+  <p class="filmProgrammazione">days of<br>being wild</p>
+  <p class="VO">(v.o.)</p>
+</div></a>
+</div>
+<div class="col-1 centrato"id="desk">
+  <div class="centrato filmTimeline"style="transform:translate(0px,-40px);height:40px;width:100px;">
+    <img src="vettori/programmazioneAggiuntiva.svg"style="transform:translate(0px,-53px)">
+    <img src="vettori/programmazioneOrario.svg"id="lineaTempo">
+  <a href="film.html"><p class="filmProgrammazione" style="transform: translatex(-41px);">sulla<br>infinitezza</p></a>
+
+</div>
+</div>
+<!--fine dei film in nero desktop-->
+
+
+<div class="col-2">
+
+</div>
+<div class="col-1">
+</div>
+
+</div>
+
+<div class="row" style="position:relative;z-index:-1;">
+<div class="col-1 centrato">
+  <img src="vettori/circleStroke.svg" class="animation3" id="desk">
+</div>
+
+<div class="col-1 centrato">
+  <img src="vettori/triangleStroke.svg" class="animation2" id="desk">
+</div>
+
+<div class="col-1">
+
+</div>
+<div class="col-5 centrato animation1" style="transform:translateY(26px); position: relative; z-index:-10;" >
+ <h1>LUNED&Igrave;</h1><!-- scritta sul footer -->
+</div>
+
+</div>
+
+<!-- riga del COLOPHON -->
+<div class="row inbasso" style="position: relative; z-index: -1;">
+<div class="col-3">
+<div  class="colophon">
+  <h4 class="spazio">Postmodernissimo Cinema Perugia</h4>
+  <h5>Via del Carmine, 4 - 06121 Perugia</h5>
+  <h5 class="spazio">Tel. 075-9664527</h5>
+  <h6>Anonima Impresa Sociale soc. coop. Via del Carmine, 4 06121 Perugia</h6>
+  <h6>CF/P. IVA 03397150545 Privacy/Cookies</h6>
+</div>
+</div>
+
+<div class="col-2">
+<a href="https://www.europa-cinemas.org/en"target="_blank"><img src="vettori/europaCinemas.svg" style="transform:scale(0.7)"></a>
+</div>
+<div class="col-1" id="desk">
+
+</div>
+<div class="col-2 centrato">
+<a href="https://www.instagram.com/postmodpg/"target="_blank"><img style="position:absolute; right:0px; top:30px;" src="icon/instagram.svg"></a>
+<a href="https://www.facebook.com/postmodpg"target="_blank"><img style="position:absolute;right:0px;"src="icon/facebook.svg"></a>
+<a href="https://twitter.com/postmodpg"target="_blank"><img style="position:absolute;right:0px;bottom:16px;"src="icon/twitter.svg"></a>
+<a href="https://t.me/postmod"target="_blank"><img style="position:absolute;top:30px;left:0px;"src="icon/telegram.svg"></a>
+<a href="https://www.youtube.com/channel/UC82jp1Uu7ZYonci4VoereoQ"target="_blank"><img style="position:absolute;left:0px;"src="icon/youtube.svg"></a>
+</div>
+
+</div>
+<!-- fine riga del COLOPHON -->
+
+
+</div>
+<!-- finisce la griglia-->
+
+<footer id="footer">
+</footer>
+</html>
