@@ -1,0 +1,387 @@
+/*griglia*/
+*{
+box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+/* qui inizia il layout*/
+[class*="col-"] {
+  float: left;
+  padding:10px;
+  margin: 5.5px;
+
+}
+.col-1 {width: 123px;}
+.col-2 {width: 256px;}
+.col-3 {width: 390px;}
+.col-4 {width: 524px;}
+.col-5 {width: 656px;}
+.col-6 {width: 791px;}
+.col-7 {width: 924px;}
+.col-8 {width: 1058px;}
+/* così diventano quadrati*/
+div {
+  height: 123px;
+}
+/* i confini deli col-*/
+.tutto{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 2px;
+  padding-top: 15px;
+
+}
+/* riga*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* per allineare gli elementi al centro*/
+.centrato{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* per gli elementi alti due righe*/
+.dueRighe{
+  height: 257px;
+}
+/* qui finisce il layout*/
+
+
+/* qui iniziano i font*/
+@font-face {
+    font-family: "FuturaMedium";
+    src: url(../futura/futura_medium.ttf);}
+@font-face {
+    font-family: "FuturaBook";
+    src: url(../futura/futura_book.ttf);}
+@font-face {
+    font-family: "FuturaExtraBold";
+    src: url(../futura/futura_extra_bold.otf);}
+@font-face {
+    font-family: "FuturaBold";
+    src: url(../futura/futura_bold.otf);}
+@font-face {
+    font-family: "PostTypo";
+    src: url(futura/postypo.woff2);}
+@font-face {
+    font-family: "FuturaMediumItalic";
+    src: url(../futura/futura_medium_italic.otf);}
+p{
+  font-family: 'FuturaMedium';
+  font-size: 13px;
+  line-height: 14px;
+  margin-bottom:1.5em;
+}
+p.extrabold{
+  font-family: 'FuturaExtraBold';
+  font-size: 72px;
+  line-height: 14px;
+  margin-bottom:1.5em;
+}
+h1{
+  font-family: 'PostTypo';
+  font-size: 81px;
+}
+
+h2{
+  font-family: 'FuturaExtraBold';
+  font-size: 27px;
+  display: inline-block;
+}
+
+h3{
+  font-family: 'FuturaBold';
+  font-size: 13.5px;
+
+}
+
+h4{
+  font-family: 'FuturaBook';
+  font-size: 16.828px;
+  line-height: 0px;
+}
+h5{
+  font-family: 'FuturaBook';
+  font-size: 11px;
+  line-height: 0px;
+}
+h6{
+  font-family: 'FuturaBook';
+  font-size: 8.5px;
+  line-height: 0px;
+  margin-top: -8px
+}
+/* qui finiscono i font*/
+/* qui inizia il menù*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  font-family: 'FuturaExtraBold';
+  font-size: 16px;
+  line-height: 14px;
+  margin-bottom:1em;
+}
+a{
+    transition: all 0.25s ease;
+}
+
+a#normale:link, a#normale:visited{
+  color: #000000;
+  text-decoration: none;
+  padding: 4px 8px 4px 8px;
+  background-color: #FBF598;
+}
+a#normale:hover, a#normale:active{
+  font-size: 17px;
+  color: #FBF598;
+  background-color: #000000;
+}
+
+/* qui finisce il menù*/
+
+/* qui iniziano le animazioni*/
+@keyframes semi1 {
+  20% {transform:rotateX(180deg);}
+  50% {transform: translateY(-320px);}
+}
+.animation1{
+  animation-name: semi1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+}
+
+@keyframes semi2 {
+  20% {transform:rotateX(180deg);}
+  50% {transform: translateY(320px);}
+}
+.animation2{
+  animation-name: semi2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+}
+/* qui finiscono le animazioni*/
+/* inizio del footer*/
+footer{
+background-color: #000000;
+clear: both;
+position: absolute;
+bottom: -10px;
+height: 150px;
+width: 110%;
+margin-left: -50px;
+top:967px;
+z-index:-2;
+
+}
+.spazio{
+  margin-bottom: 25px;
+}
+
+.rigaTraslata{
+  transform: translateY(145px);
+}
+.colophon{
+  position: absolute;
+  color:#FBF598;
+}
+
+/*pagina dei film*/
+.titoloFilm{
+  display: inline-block;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.trailer{/*link youtube*/
+  position:absolute;
+  bottom:0px;
+  left:0px;
+}
+.trailer:hover{
+  transform: scale(1.2);
+}
+.descrizione{
+  top:10px;
+  margin-left:-11px;
+  margin-right:20px;
+}
+.back{/*freccia indietro*/
+  position:absolute;
+  bottom:-30px;
+  right:-30px;
+}
+.back:hover{
+  transform: scale(1.2);
+}
+b{
+  font-family: 'FuturaBold';
+  margin-bottom: 50px;
+}
+i{
+  font-family: 'FuturaMediumItalic';
+}
+
+a#biglietti:link, a#biglietti:visited{
+  color: #FBF598;
+  text-decoration: none;
+  padding: 4px 8px 4px 8px;
+  opacity: 0.8;
+  background-color: #C10130;
+  font-size: 20px;
+}
+a#biglietti:hover, a#biglietti:active{
+  font-size: 20px;
+  color: #000000;
+  background-color: #FBF598;
+}
+/*fine pagina dei film*/
+
+/*responsive*/
+#myAnimation{
+  background-color: black;
+}
+#tab{
+  display: none;}
+
+.tab{
+  display: none;
+}
+#smart{
+  display: none;
+}
+#noSmart{
+  display: block;
+}
+@media screen and (min-width:554px) and (max-width: 1099px){
+/* i confini deli col-*/
+  .tutto{
+    max-width: 540px;
+    margin: auto;
+    padding-left: 2px;
+    padding-top: 15px;
+
+  }
+  /* responsive*/
+  #desk{
+    display: none;
+  }
+  #tab{
+    display: block;
+  }
+  .tab{
+    display: block;
+  }
+  #smart{
+    display: none;
+  }
+  /* modifiche al footer*/
+  footer{
+  height: 300px;
+  top: 1635px;
+}
+
+/*pagina dei film*/
+  .backTab{
+    position: absolute;
+    left:0px;
+    bottom: 30px;
+    transform-origin: left;
+  }
+  .trailer{
+    left:445px;
+    bottom: 50px;
+    transform-origin: right;
+    transform: scale(1.2);
+  }
+  .backTab:hover{
+    transform: scale(1.2);
+  }
+  .trailer:hover{
+    transform: scale(1.4);
+  }
+
+}
+@media screen and (max-width: 554px){
+/* i confini deli col-*/
+  .tutto{
+    max-width: 270px;
+    margin: auto;
+    padding-left: 2px;
+    padding-top: 15px;
+
+  }
+    /* responsive*/
+  #tab{
+    display: none;
+  }
+  #desk{
+    display: none;
+  }
+  .noSmart{
+    display: none;
+  }
+  #noSmart{
+    display: none;
+  }
+  #smart{
+    display: block;
+  }
+  /* modifiche al footer*/
+  footer{
+    position:absolute;
+  height: 450px;
+  top:2040px;
+}
+.colophon{
+  width:500px;
+}
+  .inbasso{
+    transform: translateY(450px);
+  }
+/* aggiustamenti logo*/
+  .logoscaled{
+    padding: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #menuHideSmart{
+  }
+  /*pagina dei film*/
+  h2{
+    position:absolute;
+    font-size: 18px;
+    bottom: 5px;
+  }
+.trailer{
+  position: absolute;
+  left:175px;
+  z-index: 1
+}
+  .backTab{
+    position: absolute;
+    left:0px;
+    top:65px;
+  }
+  .titoloFilm{
+    width: 200px;
+    left:40px;
+  }
+
+}
+}

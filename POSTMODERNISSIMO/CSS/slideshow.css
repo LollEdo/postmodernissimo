@@ -1,0 +1,12 @@
+.slides{
+  transform: translate(1042px,-66px);
+}
+.slide{
+}
+
+.arrowId{
+  opacity: 0.3;
+}
+.arrowId:hover{
+  opacity: 1;
+}

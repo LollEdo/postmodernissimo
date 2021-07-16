@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet"  href="CSS/contatti.css">
+  <link rel = "icon" href = "vettori/logo.svg"  type = "image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postmodernissmo</title>
+  <script src="JavaScriptComplessivo.js"></script>
+</head>
+
+
+
+<body style="background-color: #FBF598; min-height:100%;"> <!-- COLORE SFONDO-->
+<!-- inizia la griglia-->
+<div class="tutto">
+<!-- riga 1-->
+<div class="row" style="">
+<!-- intestazione -->
+  <div class="col-1 centrato" style="positio: relative; z-index: 3;"> <!-- il logotipo -->
+    <a href="index.html"><img src="vettori/logotipo.svg" style="width:103px; height:96px;"></a>
+  </div>
+
+  <div class="col-2 centrato" id="tab" style="position: relative; z-index:3;"> <!-- l'essence -->
+    <a href="index.html"><img src="vettori/logo.svg" class="logoscaled" style="width:142px;height:75.5px; right: 50px;"></a>
+  </div>
+
+  <div class="col-1 centrato" style="position: relative; z-index: 2;" id="tab">
+    <img src="vettori/menublack.svg" style="position: absolute; right: 15px;" onclick="menu();footerTab()">
+  </div>
+<!-- titolo desktop -->
+<div class="col-1" id="desk">
+<div style="position:relative;">
+<h1 style="font-size: 32px; position: absolute; left: 180px; bottom: 25px;">CONTATTACI</h1>
+</div>
+
+
+</div>
+<!-- inizio del form desktop -->
+<form id="desk">
+<div class="col-6" style="position: relative; overflow: visible;" id="desk">
+<!-- label  -->
+<label for="nome" style="position: absolute; top: 150px; left: 80px;">NOME</label>
+<!-- input  -->
+<input type="text" id="nome" name="nome" placeholder="Scrivi il tuo nome.." style="position: absolute; top: 170px; left: 60px;" required>
+<label for="email" style="position: absolute; top: 150px; right:390px">E-MAIL</label>
+<input type="text" id="email" name="email" placeholder="Scrivi la tua mail.." style="position: absolute; top: 170px; right: 300px;" required>
+<label for="dest" style="position: absolute; top: 280px; left:80px">DESTINATARIO</label>
+<!-- select  -->
+<select id="dest" name="dest" style="position: absolute; left: 60px; top: 300px; width: 160px;" required>
+<option value=""></option>
+<option value="direzione">Direzione</option>
+<option value="programmazione">Programmazione</option>
+<option value="progetti">Progetti educativi</option>
+<option value="eventi">Eventi</option>
+<option value="esposizioni">Esposizioni educativi</option>
+<option value="stampa">Stampa & partnership</option>
+<option value="webmaster">Webmaster</option>
+ </select>
+ <label for="oggetto" style="position: absolute; top: 280px; right:375px">OGGETTO</label>
+ <input type="text" id="ogetto" name="oggetto" placeholder="Scrivi la motivazione.." style="position: absolute; top: 300px; right: 300px;" required>
+ <label for="messaggio" style="position: absolute; top: 390px; left:80px">MESSAGGIO</label>
+ <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio.." style="position: absolute; border: 1px solid black; resize: none; background: #FBF598; top: 410px; right: 145px; width: 75%; height: 75%" required></textarea>
+
+
+</div>
+<!-- invio  -->
+<div id="desk">
+  <input type="submit" value="INVIA">
+</div>
+
+</form>
+
+<!--men&ugrave; tablet-->
+<div id="menuHide" class="tab" style="display: none;position: relative;z-index: 1;">
+<div class="col-4 dueRighe" id="tab" style="margin-top:15px;">
+  <ul>
+    <li><a id="normale" href="programmazione.html"class="top">PROGRAMMAZIONE</a></li>
+    <li><a id="normale" href="https://www.liveticket.it/postmodernissimo" target="_blank"class="top">BIGLIETTI</a></li>
+    <li><a id="normale" href="iniziative.html"class="top">INIZIATIVE</a></li>
+    <li><a id="normale" href="canvas.html"class="top">SHOP</a></li>
+    <li><a id="normale" href="contatti.html"class="top">CONTATTI</a></li>
+    <li><a id="normale" href="https://www.1895.cloud/cinema/postmodernissimo/ "target="_blank"class="top">1895.CLOUD</a></li>
+    <li><a id="normale" href="http://www.cinemametropolis.it" target="_blank"class="top">METROPOLIS CINEMA</a></li>
+  </ul>
+</div>
+<div class="col-3 dueRighe" id="tab">
+  <p>POSTMOD &Egrave; UN LUOGO DEDICATO AL CINEMA E ALLE ARTI VISIVE. NATO CON L’INTENTO DI TRASFORMARE LA VISIONE DEL FILM IN UN’ESPERIENZA MOLTO PI&Ugrave; PROFONDA DEL SEMPLICE ACQUISTO DI UN BIGLIETTO.<br>
+  <br>POSTMOD &Egrave; UN CINEMA CHE TRAE FORZA E ISPIRAZIONE DALLA COMUNIT&Agrave; CHE LO VIVE.</p>
+</div>
+</div>
+<!--fine men&ugrave; tablet-->
+<!-- inizio del form tablet-->
+<form id="tab">
+<div class="col-4" style="position: relative; overflow: visible;" id="tab">
+<label for="nome" style="position: absolute; top: 155px; left: 80px;">NOME</label>
+<input type="text" id="nome" name="nome" placeholder="Scrivi il tuo nome.." style="position: absolute; top: 175px; left: 60px; width:30%" required>
+<label for="email" style="position: absolute; top: 155px; right:154px">E-MAIL</label>
+<input type="text" id="email" name="email" placeholder="Scrivi la tua mail.." style="position: absolute; top: 175px; right: 60px; width: 30%" required>
+<label for="dest" style="position: absolute; top: 280px; left:80px">DESTINATARIO</label>
+<select id="dest" name="dest" style="position: absolute; left: 60px; top: 300px; width: 160px;" required>
+<option value=""></option>
+<option value="direzione">Direzione</option>
+<option value="programmazione">Programmazione</option>
+<option value="progetti">Progetti educativi</option>
+<option value="eventi">Eventi</option>
+<option value="esposizioni">Esposizioni educativi</option>
+<option value="stampa">Stampa & partnership</option>
+<option value="webmaster">Webmaster</option>
+ </select>
+ <label for="oggetto" style="position: absolute; top: 280px; right:135px">OGGETTO</label>
+ <input type="text" id="ogetto" name="oggetto" placeholder="Scrivi la motivazione.." style="position: absolute; top: 300px; right: 60px; width:30%" required>
+ <label for="messaggio" style="position: absolute; top: 390px; left:80px">MESSAGGIO</label>
+ <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio.." style="position: absolute; border: 1px solid black; resize: none; background: #FBF598; top: 410px; right: 140px; width: 62%; height: 75%" required></textarea>
+
+ <div id="tab" style="position:relative;">
+   <input type="submit" value="INVIA" style="position: absolute; top:400px; right: 54px; width: 9%;">
+ </div>
+
+</div>
+
+<div id="desk">
+  <input type="submit" value="INVIA">
+</div>
+
+
+
+</form>
+
+<!-- fine del form tablet-->
+
+
+<!-- intestazione desktop-->
+  <div class="col-2" style="position: relative;" id="desk">
+  <a href="index.html"><img src="vettori/logo.svg" id="desk" style="width:142px;height:75.5px; position: absolute; top: 22px;"></a>
+  </div>
+
+
+
+
+
+  <div class="col-6 centrato" style="position:relative; z-index: -1;" id="desk">
+
+  </div>
+<!-- intestazione tablet-->
+  <div class="col-4 centrato" style="position:relative; z-index: -1;" id="tab">
+  <h1 style="font-size: 32px; position: absolute; right:165px; top:-120px;">CONTATTACI</h1>
+  </div>
+
+
+
+<!-- men&ugrave; -->
+</div>
+<div class="row"  style="z-index: -3;">
+<div class="col-2 dueRighe" style="padding-left:0px;"id="desk">
+  <ul>
+    <li><a id="normale" href="programmazione.html"class="top">PROGRAMMAZIONE</a></li>
+    <li><a id="normale" href="https://www.liveticket.it/postmodernissimo" target="_blank"class="top">BIGLIETTI</a></li>
+    <li><a id="normale" href="iniziative.html"class="top">INIZIATIVE</a></li>
+    <li><a id="normale" href="canvas.html"class="top">SHOP</a></li>
+    <li><a id="prog" href="contatti.html"class="top">CONTATTI</a></li>
+    <li><a id="normale" href="https://www.1895.cloud/cinema/postmodernissimo/ "target="_blank"class="top">1895.CLOUD</a></li>
+    <li><a id="normale" href="http://www.cinemametropolis.it" target="_blank"class="top">METROPOLIS CINEMA</a></li>
+  </ul>
+</div>
+<!-- fine men&ugrave; -->
+
+<div class="col-6 centrato" style="position:relative; z-index:-1;" id="desk">
+
+</div>
+
+<div class="col-4 centrato" style="position:relative; z-index:-1;" id="tab">
+
+</div>
+
+
+  <div class="centrato"style="transform:translate(0px,10px)">
+
+  </div>
+
+<!-- cornici svg -->
+<div class="col-6 centrato" style="position: relative; z-index: -1; overflow: visible;" id="desk">
+<img src="vettori/cornice.svg" style="position: absolute; bottom: 1px;"></img>
+</div>
+
+<div class="col-4 centrato" style="position: relative; z-index: -1; overflow: visible;" id="tab">
+<img src="vettori/corniceresp.svg" style="position: absolute; left:0; bottom: 1px;"></img>
+</div>
+
+</div>
+
+<div class="row" style="position:relative;z-index:-1;">
+
+<div class="col-2 centrato" style="position: relative;" id="desk">
+<img src="vettori/cornicedown.svg" style=" position: absolute; left:0;"></img>
+  <h1 style="font-size: 32px;">NEWS<br>LETTER</h1>
+</div>
+
+<div class="col-3 centrato" style="position: relative;" id="tab">
+<img src="vettori/cornicedownresp.svg" style=" position: absolute; left:0; top:0;"></img>
+  <h1 style="font-size: 32px;">NEWSLETTER</h1>
+</div>
+
+
+<!-- form newsetter desktop -->
+<div class="col-6 centrato" style="position: relative;" id="desk">
+<form>
+< <label for="nome" style="position: absolute; top: 30px; left: 80px;">NOME</label>
+  <input type="text" id="nome" name="nome" placeholder="Scrivi il tuo nome.." style="position: absolute; top:50px; left: 60px;" required>
+  <label for="email" style="position: absolute; top: 30px; right:390px">E-MAIL</label>
+  <input type="text" id="email" name="email" placeholder="Scrivi la tua mail.." style="position: absolute; top: 50px; right: 300px;" required>
+  <input type="submit" value="INVIA" style="top: 49px; right:57px; height: 40px;">
+  <!--<input type="checkbox" value="diciotto" style="position: absolute; top:60px; right: 255px;"><h4 style="font-size: 12px; position: absolute; right: 145px; top:53px;">Ho 18 anni o pi&ugrave;</h4>-->
+<div class="centrato" style="position:absolute; top:11px; right: 140px;">
+  <label class="container" style="font-size: 13px;">Ho 18 anni o pi&ugrave;<br>(facoltativo)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+  </label>
+</div>
+</form>
+
+</div>
+<!-- form newsetter tablet -->
+<div class="col-4 centrato" style="position: relative;" id="tab">
+<form>
+<label for="nome" style="position: absolute; top: -33px; left: 80px;">NOME</label>
+  <input type="text" id="nome" name="nome" placeholder="Scrivi il tuo nome.." style="position: absolute; top:-15px; left: 60px; width:31%;" required>
+  <label for="email" style="position: absolute; top: 41px; left:80px">E-MAIL</label>
+  <input type="text" id="email" name="email" placeholder="Scrivi la tua mail.." style="position: absolute; top: 60px; left: 60px; width:31%;" required>
+  <input type="submit" value="INVIA" style="top: 58px; right:57px; height: 40px;">
+  <!--<input type="checkbox" value="diciotto" style="position: absolute; top:60px; right: 255px;"><h4 style="font-size: 12px; position: absolute; right: 145px; top:53px;">Ho 18 anni o pi&ugrave;</h4>-->
+<div class="centrato" style="position:absolute; top:21px; right: 140px;">
+  <label class="container" style="font-size: 13px;">Ho 18 anni o pi&ugrave;<br>(facoltativo)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+  </label>
+</div>
+</form>
+</div>
+<!-- form newsetter desktop -->
+
+</div>
+
+<!-- riga del COLOPHON -->
+<div class="row" style="position: relative; z-index: -1;">
+<div class="col-3">
+<div  class="colophon">
+  <h4 class="spazio">Postmodernissimo Cinema Perugia</h4>
+  <h5>Via del Carmine, 4 - 06121 Perugia</h5>
+  <h5 class="spazio">Tel. 075-9664527</h5>
+  <h6>Anonima Impresa Sociale soc. coop. Via del Carmine, 4 06121 Perugia</h6>
+  <h6>CF/P. IVA 03397150545 Privacy/Cookies</h6>
+</div>
+</div>
+
+<div class="col-2">
+<a href="https://www.europa-cinemas.org/en"target="_blank"><img src="vettori/europaCinemas.svg" style="transform:scale(0.7)"></a>
+</div>
+<div class="col-1" id="desk">
+
+</div>
+<div class="col-2 centrato">
+<a href="https://www.instagram.com/postmodpg/"target="_blank"><img style="position:absolute; right:0px; top:30px;" src="icon/instagram.svg"></a>
+<a href="https://www.facebook.com/postmodpg"target="_blank"><img style="position:absolute;right:0px;"src="icon/facebook.svg"></a>
+<a href="https://twitter.com/postmodpg"target="_blank"><img style="position:absolute;right:0px;bottom:16px;"src="icon/twitter.svg"></a>
+<a href="https://t.me/postmod"target="_blank"><img style="position:absolute;top:30px;left:0px;"src="icon/telegram.svg"></a>
+<a href="https://www.youtube.com/channel/UC82jp1Uu7ZYonci4VoereoQ"target="_blank"><img style="position:absolute;left:0px;"src="icon/youtube.svg"></a>
+</div>
+
+</div>
+<!-- fine riga del COLOPHON -->
+
+
+</div>
+<!-- finisce la griglia-->
+<footer id="footer">
+</footer>
+</html>
