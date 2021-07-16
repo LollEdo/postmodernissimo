@@ -58,19 +58,19 @@ div {
 /* qui iniziano i font*/
 @font-face {
     font-family: "FuturaMedium";
-    src: url(../futura/futura_medium.ttf) format('truetype');}
+    src: url(futura_medium.ttf) format('truetype');}
 @font-face {
     font-family: "FuturaBook";
-    src: url(../futura/futura_book.ttf) format('truetype');}
+    src: url(futura_book.ttf) format('truetype');}
 @font-face {
     font-family: "FuturaExtraBold";
-    src: url(../futura/futura_extra_bold.otf) format('opentype');}
+    src: url(futura_extra_bold.otf) format('opentype');}
 @font-face {
     font-family: "FuturaBold";
-    src: url(../futura/futura_bold.otf) format('opentype');}
+    src: url(futura_bold.otf) format('opentype');}
 @font-face {
     font-family: "PostTypo";
-    src: url(../futura/postypo.woff2) format('woff2');}
+    src: url(postypo.woff2) format('woff2');}
 
 p{
   font-family: 'FuturaMedium';
